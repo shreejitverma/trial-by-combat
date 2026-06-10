@@ -3,6 +3,7 @@
 Thanks for wanting to contribute. One rule up front:
 
 **Human-authored pull requests targeting `main` must be raised through [`no-mistakes`](https://github.com/kunchenguid/no-mistakes).**
+We require this to reduce the maintainer's burden of reviewing and merging contributions.
 
 `no-mistakes` puts a local git proxy in front of your real remote. Pushing through it runs an AI-driven review/test/lint pipeline in an isolated worktree, forwards the push upstream only after every check passes, and opens a clean PR automatically.
 
@@ -28,7 +29,7 @@ See the [no-mistakes quick start](https://kunchenguid.github.io/no-mistakes/star
 ## Repo conventions
 
 - Node 24+, raw ESM JavaScript (no bundler, no transpiler, no TypeScript). See `CLAUDE.md` for architecture notes and agent instructions.
-- Use TDD for bug fixes and new features. Tests live in `test/*.test.js` and run via the built-in `node:test` runner.
+- Tests live in `test/*.test.js` and run via the built-in `node:test` runner.
 - Run `npm run lint` and `npm test` before pushing. The pipeline will run them again, but a fast local pass saves rounds.
 
 ## Questions
